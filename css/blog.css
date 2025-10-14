@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    height: 3981px;
+    width: 1405px;
+    position: relative;
+}
+
+/*nav bar (inside header by position:abs)*/
+
+nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    z-index: 1;
+}
+
+.logo {
+    padding:  20px 20px 20px 100px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 720px;
+    padding: 54px;
+}
+
+
+nav ul a {
+    color: white;
+}
+
+nav ul li .nav-btn {
+    display: inline-block;
+    border: 2px white solid;
+    border-radius: 10px;
+    padding: 10px 50px 10px 50px;
+    border: 2px solid white;
+    border-radius: 288px;
+    margin-top: -10px;
+}
+
+/*headr*/
+
+header {
+    width: 100%;
+    height: 720px;
+    background-image: url(/img/bg.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    column-gap: 200px;
+}
+
+header h1 {
+    color: white;
+    font-size: 100px;
+}
+
+header .describe-page {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 500px;
+    padding-right: 35px;
+}
+header .describe-page,
+.nav-links2 a {
+    color: white;
+}
+
+header .describe-page h1 {
+    font-size: 49px;
+}
+
+header .describe-page h3 {
+    opacity: .5;
+    word-spacing: 13px;
+}
+
+header .nav-links2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+header .nav-links2 a {
+    padding: 15px;
+    display: inline-block;
+    border-radius: 27px;
+    width: 180px;
+    text-align: center;
+}
+
+header .nav-links2-two {
+    border: 2px solid white;
+} 
+
+header .nav-links2-one {
+    background-color: #F5167E;
+}
+
+
+
+/*Search Box*/
+
+.search-box {
+    position: absolute;
+    top: 650px;
+    height: 140px;
+    width: 1086px;
+    background-color: #242565;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 154px;  
+}
+
+.search-box div {
+    padding: 30px;
+}
+
+.search-box div label {
+    display: block;
+    color: white;
+    opacity: .7;
+    margin-left: 1p3x;
+    margin-bottom: 16px;
+}
+
+.search-box input,
+.search-box select {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 26px;
+    border-bottom: 1px #7778B0 solid;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: 430px;
+    position: absolute;
+    bottom: 0;
+    background-color: #0A075F;
+    padding: 40px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+footer .copyright {
+    text-align: center;
+    color: #fff;
+    border-top: 1px #4C4D8B solid;
+    padding-top: 23px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr auto auto 1fr;
+    color: white;
+    column-gap: 40px;
+}
+
+.footer-content p {
+    opacity: .7;
+}
+
+.footer-content-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.footer-content-2 {
+     display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.footer-content-2 h2 {
+    margin-bottom: 34px;
+}
+
+.footer-content-3 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+.footer-content-3 h2 {
+    margin-top: 9px;
+}
+
+.footer-content-4 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+}
+
+.footer-content-4 .field-email input,
+.footer-content-4 .field-email button{
+    background-color: transparent;
+    border: none;
+}
+
+.footer-content-4 .field-email  input {
+    background-color: white;
+    color: black;
+    padding: 14px;
+    padding-right: 182px;
+    border-radius: 20px;
+}
+.footer-content-4 .field-email button {
+    color: white;
+    position: absolute;
+    background-color: #F5167E;
+    padding: 10px;
+    border-radius: 20px;
+    top: 218px;
+    right: 133px;
+}
+
+.footer-content-4 .field-email input:focus {
+    outline: none;
+}
