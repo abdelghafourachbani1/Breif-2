@@ -7,6 +7,10 @@
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: 3981px;
     width: 1405px;
@@ -109,8 +113,6 @@ header .nav-links2-one {
 }
 
 
-
-
 /*Search Box*/
 
 .search-box {
@@ -145,6 +147,281 @@ header .nav-links2-one {
     color: white;
     font-size: 26px;
     border-bottom: 1px #7778B0 solid;
+}
+
+
+/*events-head*/
+
+main {
+    height: 2831px;
+    width: 100%;
+}
+
+main .event-head {
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 7% auto;
+}
+
+main .event-head h2 {
+    color: #242565;
+    font-size: 40px;
+}
+
+main .event-head  select {
+    color: #0A075F;
+    border: none;
+    background-color: #F2F4FF;
+    padding-right: 40px;
+    border-radius: 35px;
+}
+
+main .event-head  .selections {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+
+/*events-content*/
+
+.grid-cards {
+    height: 670px;
+    display: grid;
+    margin: 7% auto;
+    grid-template-rows: auto auto;
+    gap: 20px;    
+    width: 80%;
+}
+
+.grid-cards .row-1 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.grid-cards .row-2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.grid-cards .row-1 .card-1,
+.grid-cards .row-1 .card-2,
+.grid-cards .row-1 .card-3,
+.grid-cards .row-2 .card-4,
+.grid-cards .row-2 .card-5 {
+    height: 435px;
+    border-radius: 25px;
+}
+
+
+
+.grid-cards .row-1 .card-1 img,
+.grid-cards .row-1 .card-2 img,
+.grid-cards .row-1 .card-3 img,
+.grid-cards .row-2 .card-4 img,
+.grid-cards .row-2 .card-5 img{
+    width: 100%;
+}
+
+.grid-cards .concert-info {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
+.grid-cards .concert-info .date-event p {
+    color: #120daf;
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 12px;
+}
+
+.grid-cards .concert-info .date-event h3 {
+    font-size: 37px;
+}
+
+.grid-cards .concert-info .concert-place {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.grid-cards .concert-info .concert-place h4 {
+    font-size: 16px;
+    word-spacing: 5px;
+}
+
+.grid-cards .concert-info .concert-place p {
+    opacity: .5;
+    word-spacing: 5px;
+}
+
+.grid-cards .card-1,
+.grid-cards .card-2, 
+.grid-cards .card-3,
+.grid-cards .card-4,
+.grid-cards .card-5 {
+    box-shadow: 5px 5px 150px rgb(34 25 224/ 25%) ;
+}
+
+/*events-footer*/
+
+.gotoevents {
+    padding: 15px 25px 15px 25px;
+    border: 2px solid #3D37F1;
+    color: #3D37F1;
+    border-radius: 35px;
+    width: 20%;
+    margin: 7% auto;
+    text-align: center;
+}
+
+/*Make your own bevent*/
+
+.own-event {
+    height: 252px;
+    width: 100%;
+    margin: 4% auto;
+    background-color: #EEE1FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.own-event .part-2 {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 30px;
+    margin-bottom: 3%;
+}
+
+.own-event .part-2 h2 {
+    font-size: 45px;
+}
+
+.own-event .part-2 a{
+    padding: 10px 65px 10px ;
+    background-color: #F5167E;
+    width: 60%;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px gray,-2px -2px 10px gray;
+}
+
+.own-event img {
+    padding-bottom: 5%;
+}
+
+
+/*brands*/
+
+.brands {
+    width: 80%;
+    margin: 3% auto;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+}
+
+.brands h3 {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 10px;
+    color: #242565;
+}
+
+.brands p {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.grid-cards .brands .row-1 {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-cards .brands .row-2 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Blog-Grid*/
+
+.blog-grid {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+.blog-grid h2 {
+    color: #0A075F;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.blog-grid .describe-blog {
+    text-align: center;
+    opacity: .8;
+}
+
+.blog-grid .grid-content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between; 
+    gap: 10px;  
+    margin-top: 2%;
+}
+
+.blog-grid .blog-content {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    justify-content: space-between;
+}
+
+.blog-grid img {
+    width: 100%;
+}
+
+.blog-grid .blog-content h5 {
+    font-size: 19px;
+    padding-top: 2%;
+}
+
+.blog-grid .blog-content h6 {
+    font-size: 13px;
+    padding-top: 2%;
+    opacity: .7;
+}
+
+.blog-grid .blog-content .blog-date {
+    font-size: 12px;
+    opacity: .7;
+}
+
+/*blog footer*/
+
+.blog-grid .gotoblog {
+    padding: 15px 25px 15px 25px;
+    border: 2px solid #3D37F1;
+    color: #3D37F1;
+    border-radius: 35px;
+    width: 20%;
+    text-align: center;
+    margin: auto;
 }
 
 /*footer*/

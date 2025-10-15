@@ -8,7 +8,6 @@
 }
 
 body {
-    height: 3981px;
     width: 1405px;
     position: relative;
 }
@@ -152,12 +151,114 @@ header .nav-links2-one {
     border-bottom: 1px #7778B0 solid;
 }
 
+
+/*event page head*/
+
+main {
+    width: 80%;
+    margin: 10% auto;
+}
+
+.event-head {
+    font-size: 35px;
+    color: #242565;
+    margin: 5% auto;
+    width: 80%;
+    text-align: center;
+}
+
+/*event page content*/
+
+main .grid-cards {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    gap: 5%;
+}
+
+main .grid-cards img {
+    width: 100%;
+}
+
+main .grid-cards .row-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+}
+
+main .grid-cards .row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+}
+
+main .grid-cards .row-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+}
+
+
+.grid-cards .concert-info {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
+.grid-cards .concert-info .date-event p {
+    color: #120daf;
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 12px;
+}
+
+.grid-cards .concert-info .date-event h3 {
+    font-size: 37px;
+}
+
+.grid-cards .concert-info .concert-place {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.grid-cards .concert-info .concert-place h4 {
+    font-size: 16px;
+    word-spacing: 5px;
+}
+
+.grid-cards .concert-info .concert-place p {
+    opacity: .5;
+    word-spacing: 5px;
+}
+
+.grid-cards .card-1,
+.grid-cards .card-2, 
+.grid-cards .card-3,
+.grid-cards .card-4,
+.grid-cards .card-5, 
+.grid-cards .card-6 {
+    box-shadow: 5px 5px 150px rgb(34 25 224/ 25%) ;
+}
+
+.grid-cards .row-1 .card-1,
+.grid-cards .row-1 .card-2,
+.grid-cards .row-2 .card-3,
+.grid-cards .row-2 .card-4,
+.grid-cards .row-3 .card-5, 
+.grid-cards .row-3 .card-6 {
+    height: 435px;
+    border-radius: 25px;
+}
+
 /*footer*/
 
 footer {
     width: 100%;
     height: 430px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     background-color: #0A075F;
     padding: 40px;
