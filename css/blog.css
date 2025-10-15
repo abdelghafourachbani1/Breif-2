@@ -8,8 +8,10 @@
 }
 
 body {
-    width: 1405px;
+    width: 100%;
+    min-height: 100vh;
     position: relative;
+    overflow-x: hidden;
 }
 
 /*nav bar (inside header by position:abs)*/
@@ -119,14 +121,14 @@ header .nav-links2-one {
 .search-box {
     position: absolute;
     top: 650px;
+    left: 10%;  
     height: 140px;
-    width: 1086px;
+    width: 80%;
     background-color: #242565;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 154px;  
 }
 
 .search-box div {
@@ -302,7 +304,7 @@ footer .copyright {
     padding: 10px;
     border-radius: 20px;
     top: 218px;
-    right: 133px;
+    right: 63px;
 }
 
 .footer-content-4 .field-email input:focus {

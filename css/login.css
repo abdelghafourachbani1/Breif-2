@@ -8,9 +8,10 @@
 }
 
 body {
-    height: 3981px;
-    width: 1405px;
+    width: 100%;
+    min-height: 100vh;
     position: relative;
+    overflow-x: hidden;
 }
 
 /*nav bar (inside header by position:abs)*/
@@ -121,13 +122,13 @@ header .nav-links2-one {
     position: absolute;
     top: 650px;
     height: 140px;
-    width: 1086px;
+    width: 80%;
     background-color: #242565;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 154px;  
+    left: 10%;  
 }
 
 .search-box div {
@@ -158,7 +159,7 @@ header .nav-links2-one {
 footer {
     width: 100%;
     height: 430px;
-    position: absolute;
+    position:relative;
     bottom: 0;
     background-color: #0A075F;
     padding: 40px;
@@ -240,7 +241,7 @@ footer .copyright {
     padding: 10px;
     border-radius: 20px;
     top: 218px;
-    right: 133px;
+    right: 63px;
 }
 
 .footer-content-4 .field-email input:focus {
