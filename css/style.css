@@ -14,7 +14,6 @@ html {
 body {
     width: 100%;
     min-height: 100vh;
-    position: relative;
     overflow-x: hidden;
 }
 
@@ -30,7 +29,8 @@ nav {
 }
 
 .logo {
-    padding:  20px 20px 20px 100px;
+    padding:  35px 20px 20px 100px;
+    width: 72%;
 }
 
 nav ul {
@@ -48,13 +48,12 @@ nav ul a {
 nav ul li .nav-btn {
     display: inline-block;
     border: 2px white solid;
-    border-radius: 10px;
     padding: 10px 50px 10px 50px;
     border: 2px solid white;
     border-radius: 288px;
     margin-top: -10px;
-
 }
+
 
 /*headr*/
 
@@ -76,13 +75,17 @@ header .describe-page {
     width: 500px;
     padding-right: 153px;
 }
+
+header img {
+    width: 60%;
+}
 header .describe-page,
 .nav-links2 a {
     color: white;
 }
 
 header .describe-page h1 {
-    font-size: 49px;
+    font-size: 214%;
 }
 
 header .describe-page h3 {
@@ -149,6 +152,17 @@ header .nav-links2-one {
     font-size: 26px;
     border-bottom: 1px #7778B0 solid;
 }
+
+.search-box select option {
+    color:  #4C4D8B;
+    background-color: transparent;
+}
+
+.search-box input:focus,
+.search-box select:focus {
+    outline: none;
+}
+
 
 
 /*events-head*/
@@ -289,7 +303,7 @@ main .event-head  .selections {
 .own-event {
     height: 252px;
     width: 100%;
-    margin: 4% auto;
+    margin:  4% 0;
     background-color: #EEE1FF;
     display: flex;
     justify-content: center;
@@ -353,6 +367,10 @@ main .event-head  .selections {
     align-items: center;
 }
 
+.grid-cards .brands .row-1 .ytb-mcs {
+    width: 122px;
+}
+
 .grid-cards .brands .row-2 {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -360,6 +378,8 @@ main .event-head  .selections {
     justify-content: center;
     align-items: center;
 }
+
+
 
 /*Blog-Grid*/
 

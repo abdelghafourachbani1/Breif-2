@@ -10,7 +10,6 @@
 body {
     width: 100%;
     min-height: 100vh;
-    position: relative;
     overflow-x: hidden;
 }
 
@@ -26,7 +25,8 @@ nav {
 }
 
 .logo {
-    padding:  20px 20px 20px 100px;
+    padding:  35px 20px 20px 100px;
+    width: 72%;
 }
 
 nav ul {
@@ -153,6 +153,16 @@ header .nav-links2-one {
     border-bottom: 1px #7778B0 solid;
 }
 
+.search-box select option {
+    color:  #4C4D8B;
+    background-color: transparent;
+}
+
+.search-box input:focus,
+.search-box select:focus {
+    outline: none;
+}
+
 
 /*event page head*/
 
@@ -198,6 +208,7 @@ main .grid-cards .row-3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10%;
+    margin-bottom: 5%;
 }
 
 

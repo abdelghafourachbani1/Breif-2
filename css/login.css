@@ -7,10 +7,13 @@
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     min-height: 100vh;
-    position: relative;
     overflow-x: hidden;
 }
 
@@ -26,7 +29,8 @@ nav {
 }
 
 .logo {
-    padding:  20px 20px 20px 100px;
+    padding:  35px 20px 20px 100px;
+    width: 72%;
 }
 
 nav ul {
@@ -154,6 +158,64 @@ header .nav-links2-one {
     margin-top: -10px;
 }
 
+.search-box select option {
+    color:  #4C4D8B;
+    background-color: transparent;
+}
+
+.search-box input:focus,
+.search-box select:focus {
+    outline: none;
+}
+
+/*main (login form)  */
+
+form {
+    width: 40%;
+    height: 300px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #b5b6e2;
+    margin: 10% auto;
+    border-radius: 6%;
+}
+
+form h1 {
+    text-align: center;
+    color: #0A075F;
+}
+
+form input,
+form .btn-signup {
+    width: 75%;
+    margin: 1% auto;
+    padding: 15px;
+    border-radius: 28px;
+    border: none;
+    background-color: #ddd;
+}
+
+form input:focus {
+    background-color: white;
+    outline: none;
+    transition: .5s;
+}
+
+form .btn-signup:hover {
+    background-color: #0f0e35;
+    color: white;
+    transition: .5s;
+}
+
+form  .btn-signup {
+    width: 50%;
+    background-color: #242565;
+    color: white;
+}
+
 /*footer*/
 
 footer {
@@ -241,7 +303,7 @@ footer .copyright {
     padding: 10px;
     border-radius: 20px;
     top: 218px;
-    right: 63px;
+    right: 59px;
 }
 
 .footer-content-4 .field-email input:focus {

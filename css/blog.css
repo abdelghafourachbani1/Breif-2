@@ -10,7 +10,6 @@
 body {
     width: 100%;
     min-height: 100vh;
-    position: relative;
     overflow-x: hidden;
 }
 
@@ -26,7 +25,8 @@ nav {
 }
 
 .logo {
-    padding:  20px 20px 20px 100px;
+    padding:  35px 20px 20px 100px;
+    width: 72%;
 }
 
 nav ul {
@@ -151,6 +151,17 @@ header .nav-links2-one {
     font-size: 26px;
     border-bottom: 1px #7778B0 solid;
 }
+
+.search-box select option {
+    color: #4C4D8B;
+    background-color: transparent;
+}
+
+.search-box input:focus,
+.search-box select:focus {
+    outline: none;
+}
+
 
 /*blog content*/
 
